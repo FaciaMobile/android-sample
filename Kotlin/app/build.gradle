@@ -43,5 +43,5 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
     // Facia dependency
-    implementation 'com.github.FaciaMobile:android-core:1.0.3'
+    implementation 'com.github.FaciaMobile:android-core:+'
 }
