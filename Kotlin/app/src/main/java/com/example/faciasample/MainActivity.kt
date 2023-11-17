@@ -4,9 +4,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.facia.faciasdk.Activity.Helpers.FaceDetectionThreshold
-import com.facia.faciasdk.Activity.Helpers.LivenessType
-import com.facia.faciasdk.Activity.Helpers.OvalSize
+
 import com.facia.faciasdk.FaciaAi
 import org.json.JSONObject
 
@@ -49,9 +47,9 @@ class MainActivity : AppCompatActivity() {
             config.put("showDocDetectQlInst", true)
             config.put("retryLivenessQLCounter", 3)
             config.put("retryDocDetectQLCounter", 3)
-            config.put("faceDetectionThreshold", FaceDetectionThreshold.LOW)
-            config.put("ovalSize", OvalSize.MEDIUM)
-            config.put("livenessType", LivenessType.DEFAULT_LIVENESS)
+            config.put("faceDetectionThreshold", "LOW")
+            config.put("ovalSize", "MEDIUM")
+            config.put("livenessType", "DEFAULT")
             config
         } catch (e: Exception) {
             e.printStackTrace()
